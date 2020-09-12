@@ -10,13 +10,28 @@
         table{
             background-color: gray;
         }
+        /*table th, td{
+            
+        }*/
         table th{
-            border: 1px solid black;
             background-color: rgb(253, 160, 160);
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 18px;
+            padding: 3px;
+            
         }
         table td{
-            border: 1px solid black;
             background-color: rgb(255, 197, 89);
+            font-family: arial;
+            text-align: left;
+        }
+        table div{
+            /*border-left: 1px solid black;*/
+            background-color: yellow;
+            border-left:5px solid rgb(255, 142, 89);
+            border-bottom: 1px solid black;
+            padding: 3px;
         }
     </style>
 </head>
@@ -24,10 +39,9 @@
     <p>Name: Jun Ho Lee<p>
     <p>ID: 112940799</p>
 
-    <!-- Goal: make a table with the days of the week and classes for each day
-    Sun,    Mon,    Tues,       Wed,    Thurs,      Fri,    Sat
-    blank,  blank,  4 classes,  blank,  4 classes,  blank,  blank-->
-    <table>
+    <!-- table starts here-->
+    <table id = "schedule">
+        <!-- First Row: Days of Week-->
         <tr id = "day">
             <th>Sunday</th>
             <th>Monday</th>
@@ -37,25 +51,29 @@
             <th>Friday</th>
             <th>Saturday</th>
         </tr>
+        <!-- Second Row: Classes for each row-->
         <tr id = "classes">
             <td></td>
             <td></td>
-            <td><p>AMS 310 11:30am</p>
-                <p>CSE 303 1:15pm</p>
-                <p>CSE 373 3:00pm</p>
-                <p>CSE 316 4:45pm</p></td>
+            <td><div>AMS 310-01 11:30am</div>
+                <div>CSE 303-01 1:15pm</div>
+                <div>CSE 373-01 3:00pm</div>
+                <div>CSE 316-01 4:45pm</div></td>
             <td></td>
-            <td><p>AMS 310 11:30am</p>
-                <p>CSE 303 1:15pm</p>
-                <p>CSE 373 3:00pm</p>
-                <p>CSE 316 4:45pm</p></td>
+            <td><div>AMS 310-01 11:30am</div>
+                <div>CSE 303-01 1:15pm</div>
+                <div>CSE 373-01 3:00pm</div>
+                <div>CSE 316-01 4:45pm</div></td>
             <td></td>
             <td></td>
         </tr>
+    
+    <!-- Table for online asynchronus class-->
     </table><br>
     <table>
         <tr>
-            <th>Online classes</th></tr>
+            <th>Online classes</th>
+        </tr>
         <tr>
             <td>PHY 131</td>  
         </tr>
