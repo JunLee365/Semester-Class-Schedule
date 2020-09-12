@@ -10,60 +10,70 @@
         table{
             background-color: gray;
         }
-        /*table th, td{
-            
-        }*/
         table th{
-            background-color: rgb(253, 160, 160);
+            background-color: rgb(253, 231, 160);
             font-family: 'Lato', sans-serif;
             text-align: center;
             font-size: 18px;
             padding: 3px;
-            
+            width: 160px;
         }
         table td{
-            background-color: rgb(255, 197, 89);
+            background-color: rgb(212, 245, 255);
             font-family: arial;
             text-align: left;
         }
         table div{
-            /*border-left: 1px solid black;*/
-            background-color: yellow;
-            border-left:5px solid rgb(255, 142, 89);
             border-bottom: 1px solid black;
             padding: 3px;
+        }
+        .c310{
+            background-color: rgb(22, 167, 102); 
+            border-left: 5px solid rgb(114, 230, 178);
+        }
+        .c303{
+            background-color: rgb(73, 134, 231); 
+            border-left: 5px solid rgb(145, 187, 255);
+        }
+        .c373{
+            background-color: rgb(255, 173, 70); 
+            border-left: 5px solid rgb(255, 212, 160);
+        }
+        .c316{
+            background-color: rgb(248, 58, 34); 
+            border-left: 5px solid rgb(255, 146, 132);
         }
     </style>
 </head>
 <body>
-    <p>Name: Jun Ho Lee<p>
-    <p>ID: 112940799</p>
+    <p><u>Name:</u> Jun Ho Lee<p>
+    <p><u>ID:</u> 112940799</p>
 
     <!-- table starts here-->
     <table id = "schedule">
         <!-- First Row: Days of Week-->
         <tr id = "day">
-            <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wednes</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
         </tr>
         <!-- Second Row: Classes for each row-->
         <tr id = "classes">
             <td></td>
             <td></td>
-            <td><div>AMS 310-01 11:30am</div>
-                <div>CSE 303-01 1:15pm</div>
-                <div>CSE 373-01 3:00pm</div>
-                <div>CSE 316-01 4:45pm</div></td>
+            <td><div class = "c310">AMS 310 - 01 11:30am</div>
+                <div class = "c303">CSE 303 - 01 1:15pm</div>
+                <div class = "c373">CSE 373 - 01 3:00pm</div>
+                <div class = "c316">CSE 316 - 01 4:45pm</div></td>
             <td></td>
-            <td><div>AMS 310-01 11:30am</div>
-                <div>CSE 303-01 1:15pm</div>
-                <div>CSE 373-01 3:00pm</div>
-                <div>CSE 316-01 4:45pm</div></td>
+            <td><div class = "c310">AMS 310 - 01 11:30am</div>
+                <div class = "c303">CSE 303 - 01 1:15pm</div>
+                <div class = "c373">CSE 373 - 01 3:00pm</div>
+                <div class = "c316">CSE 316 - 01 4:45pm</div></td>
             <td></td>
             <td></td>
         </tr>
@@ -73,14 +83,16 @@
     <table>
         <tr>
             <th>Online classes</th>
+            <th>Class title</th>
         </tr>
         <tr>
-            <td>PHY 131</td>  
+            <td>PHY 131 - 69</td>  
+            <td>Classical Physics I</td>
         </tr>
         <tr>
-            <td>PHY 133</td>
+            <td>PHY 133 - L69</td>
+            <td>Classical Physics Lab I</td>
         </tr>
-        
     </table>
 </body>
 </html>
