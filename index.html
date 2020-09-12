@@ -4,12 +4,65 @@
 <head>
 <title>Jun Ho Lee CSE 316 HW#1</title>
     <style>
-        
+        body{
+            background-color: rgb(255, 255, 240);
+        }
+        table{
+            background-color: gray;
+        }
+        table th{
+            border: 1px solid black;
+            background-color: rgb(253, 160, 160);
+        }
+        table td{
+            border: 1px solid black;
+            background-color: rgb(255, 197, 89);
+        }
     </style>
 </head>
 <body>
     <p>Name: Jun Ho Lee<p>
     <p>ID: 112940799</p>
-    <table></table>
+
+    <!-- Goal: make a table with the days of the week and classes for each day
+    Sun,    Mon,    Tues,       Wed,    Thurs,      Fri,    Sat
+    blank,  blank,  4 classes,  blank,  4 classes,  blank,  blank-->
+    <table>
+        <tr id = "day">
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr id = "classes">
+            <td></td>
+            <td></td>
+            <td><p>AMS 310 11:30am</p>
+                <p>CSE 303 1:15pm</p>
+                <p>CSE 373 3:00pm</p>
+                <p>CSE 316 4:45pm</p></td>
+            <td></td>
+            <td><p>AMS 310 11:30am</p>
+                <p>CSE 303 1:15pm</p>
+                <p>CSE 373 3:00pm</p>
+                <p>CSE 316 4:45pm</p></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <th>Online classes</th></tr>
+        <tr>
+            <td>PHY 131</td>  
+        </tr>
+        <tr>
+            <td>PHY 133</td>
+        </tr>
+        
+    </table>
 </body>
 </html>
